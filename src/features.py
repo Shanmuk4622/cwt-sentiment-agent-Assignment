@@ -21,7 +21,31 @@ logger = logging.getLogger(__name__)
 
 
 class SentimentScorer:
-    """Engagement-weighted sentiment scoring engine using VADER."""
+    """Engagement-weighted sentiment scoring engine using VADER enriched with financial lexicon."""
+
+    FINANCIAL_LEXICON = {
+        "bullish": 2.8,
+        "bull": 2.2,
+        "bearish": -2.8,
+        "bear": -2.2,
+        "breakout": 2.2,
+        "rally": 2.4,
+        "ath": 2.8,
+        "dump": -3.0,
+        "pump": 2.2,
+        "crash": -3.2,
+        "liquidation": -2.6,
+        "moon": 2.2,
+        "inflow": 2.0,
+        "outflow": -2.0,
+        "accumulation": 2.0,
+        "distribution": -1.8,
+        "hodl": 1.8,
+        "fud": -2.2,
+        "surge": 2.4,
+        "plunge": -2.8,
+        "collapse": -3.2,
+    }
 
     def __init__(self, use_gpu: bool = False):
         self.use_gpu = use_gpu
@@ -30,6 +54,8 @@ class SentimentScorer:
         except Exception:
             nltk.download("vader_lexicon", quiet=True)
             self.sia = SentimentIntensityAnalyzer()
+        # Enrich VADER with quantitative finance domain terminology
+        self.sia.lexicon.update(self.FINANCIAL_LEXICON)
 
     def score_text(self, text: str) -> Dict[str, float]:
         """Compute compound, positive, negative, and neutral sentiment scores."""
