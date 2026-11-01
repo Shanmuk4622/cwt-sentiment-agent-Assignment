@@ -311,4 +311,4 @@ Outputs: `CWT_Sentiment_Agent_Submission_Report.docx`.
   5. Full Evaluation Report: [`reports/evaluation_report.md`](reports/evaluation_report.md)
   6. Formal Submission Document: [`CWT_Sentiment_Agent_Submission_Report.docx`](CWT_Sentiment_Agent_Submission_Report.docx)
 - **Submission Email:** `gilad@crowdwisdomtrading.com`
-- **Submitted by:** Shanmukeswar Bonala (`shanmukeshbonala4622@gmail.com`)
+- **Submitted by:** Shanmukesh Bonala (`shanmukeshbonala4622@gmail.com`)
