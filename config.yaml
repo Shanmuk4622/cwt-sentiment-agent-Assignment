@@ -1,0 +1,90 @@
+# CrowdWisdomTrading X Sentiment Price Prediction Agent Configuration
+
+project:
+  name: "cwt-sentiment-agent"
+  version: "1.0.0"
+  description: "Quantitative ML pipeline predicting asset returns (n+0 to n+5) from X sentiment, news, and price only."
+
+asset:
+  ticker: "BTC-USD"
+  name: "Bitcoin"
+  cashtags: ["$BTC", "#BTC", "BTC", "Bitcoin"]
+  history_days: 180
+  bar_interval: "1h"
+  timezone_storage: "UTC"
+  timezone_display: "US/Eastern"
+
+ingestion:
+  apify:
+    actor_id: "apidojo/tweet-scraper"
+    max_items: 5000
+    queries: ["$BTC", "Bitcoin price", "#BTC"]
+    cache_file: "data/raw/tweets_raw.json"
+  google_doc:
+    url: "https://docs.google.com/document/d/1w-Y86OjkiOjlIIth0VgTAohql9zcGi3uoDNYTaTsZuw/edit?tab=t.0"
+    export_url: "https://docs.google.com/document/d/1w-Y86OjkiOjlIIth0VgTAohql9zcGi3uoDNYTaTsZuw/export?format=txt"
+    cache_file: "data/raw/google_doc_baseline.json"
+  tavily:
+    search_depth: "advanced"
+    max_results: 100
+    cache_file: "data/raw/news_raw.json"
+  exa:
+    num_results: 50
+    cache_file: "data/raw/news_exa_raw.json"
+  price:
+    source: "yfinance"
+    cache_file: "data/raw/price_raw.csv"
+
+database:
+  path: "data/cwt_sentiment.db"
+  echo: false
+
+features:
+  sentiment_model: "vader"            # Options: vader, finbert
+  use_gpu_for_sentiment: true
+  engagement_weights:
+    likes: 1.0
+    retweets: 2.0
+    views: 0.1
+    followers: 0.01
+  rolling_windows: [3, 6, 12, 24, 72]
+  horizons: [0, 1, 2, 3, 4, 5]
+
+modeling:
+  horizons: [0, 1, 2, 3, 4, 5]
+  device: "cuda"                     # Fallback to cpu if cuda unavailable
+  walk_forward:
+    n_splits: 5
+    test_size_ratio: 0.15
+    embargo_periods: 5               # Purge/embargo to prevent multi-horizon label leakage
+  models:
+    xgboost:
+      enabled: true
+      n_estimators: 250
+      max_depth: 4
+      learning_rate: 0.03
+      subsample: 0.8
+      colsample_bytree: 0.8
+    catboost:
+      enabled: true
+      iterations: 250
+      depth: 5
+      learning_rate: 0.03
+      verbose: 0
+    pytorch_gpu:
+      enabled: true
+      hidden_dims: [128, 64, 32]
+      dropout: 0.2
+      epochs: 40
+      lr: 0.001
+      batch_size: 64
+
+evaluation:
+  risk_free_rate: 0.04               # Annualized risk-free rate for Sharpe/Sortino
+  transaction_cost_bps: 10           # 10 basis points per round-trip trade
+  slippage_bps: 5                    # 5 basis points slippage
+
+reporting:
+  outlook_path: "reports/sentiment_outlook_1page.md"
+  evaluation_path: "reports/evaluation_report.md"
+  figures_dir: "reports/figures"
