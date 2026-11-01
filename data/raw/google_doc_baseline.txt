@@ -1,0 +1,64 @@
+﻿Historical Twitter/X Datasets — Verified Download Links
+Compiled 21 October 2026. Every entry below was verified against its live page (size, date range, license, access).
+Finance, Crypto & Markets
+Dataset
+	Content & size
+	Dates
+	License / access
+	StockTwits 2008–2022 (NYU, Journal of Quantitative Description) — data: public S3 bucket
+	550M+ posts from 7M+ users, with bullish/bearish tags and cashtags. CSVs on S3 (71+ GB)
+	2008–2022
+	Free, no login; direct CSV download / pandas / dask. Not X/Twitter — StockTwits platform
+	Tweets about the Top Companies from 2015 to 2020 (Kaggle)
+	3M+ unique tweets on AMZN, AAPL, GOOG, MSFT, TSLA with likes/retweets/comments; 772 MB
+	2015–2020
+	CC0 Public Domain; free
+	Bitcoin tweets — 16M tweets (Kaggle)
+	~16M tweets containing "Bitcoin"/"BTC", with user, timestamp, likes, replies, retweets; 4.2 GB
+	Jan 2016 – Mar 2019
+	CC0 Public Domain; free
+	Bitcoin Twitter Sentiment Dataset (2013–2023) (Kaggle)
+	26M+ cleaned English Bitcoin tweets (spam/bots/duplicates removed); 44.9 GB
+	2013–2023
+	CC0 Public Domain; free
+	Bitcoin Tweets (Kaggle)
+	#Bitcoin/#BTC tweets, collection started 6 Feb 2021 and updated daily; ~4.8M tweets (per HF mirror card); 2.2 GB
+	2021 onward
+	CC0 Public Domain; free
+	Bitcoin Tweets Dataset (2025–2026) (Kaggle)
+	Bitcoin tweets with user metadata, hashtags, source; updated bi-monthly; 2.1 GB (count not stated). Rare post-2023 corpus
+	2025–present
+	CC0 Public Domain; free
+	Crypto & Stock Tweets (Hugging Face)
+	8.02M cleaned tweets (2.62M stock + 5.75M crypto), merged from 10 public sources; parquet
+	Mixed (sources span 2016–2023)
+	CC-BY-4.0; free, no login
+	US Election 2020 Tweets (Kaggle)
+	~1.73M election-keyword tweets with geolocation where available; 865 MB
+	15 Oct – 8 Nov 2020
+	CC0 Public Domain; free
+	General / Historical Corpora
+Dataset
+	Content & size
+	Dates
+	License / access
+	Sentiment140 (Kaggle)
+	1.6M sentiment-annotated tweets (0=negative, 4=positive); 239 MB
+	2009
+	"Other" license (see description); free
+	Twitter historical dataset: first 3 years of Twitter (Zenodo)
+	~1.5B tweet IDs only (hydration needed); ~85.5% of IDs still live as of May 2020
+	21 Mar 2006 – 31 Jul 2009
+	Non-commercial research only; free download
+	COVID-19 Twitter dataset (40M+ tweets) (Zenodo)
+	40M+ tweet IDs only with timestamps (hydration needed), 4M+/day at peak
+	Jan–Mar 2020 (v1.0)
+	Public Domain; free download
+	BillionCOV (IEEE DataPort)
+	1.4B English COVID-19 tweet IDs from 240 countries with filter metadata; hydrate via Hydrator app or twarc
+	Oct 2019 – Apr 2022
+	Open-access listing; download via IEEE DataPort
+	Notes
+* Post-2023 X data is rare: X closed free API access in 2023, so large public corpora mostly end by 2022. The Kaggle Bitcoin 2025–2026 dataset above is the exception and updates bi-monthly.
+* Tweet-ID datasets need hydration: Zenodo/IEEE corpora ship IDs only (Twitter redistribution rules). Rebuilding full text requires X API access (paid tier) via tools like twarc or Hydrator, and deleted/protected tweets are lost — e.g. 500M+ of COV19Tweets' 2B IDs were already gone.
+* Kaggle access: the dataset download API links responded without a login when tested on 21 Oct 2026; the website download button may prompt for a free Kaggle account.

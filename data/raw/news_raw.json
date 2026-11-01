@@ -1,0 +1,92 @@
+[
+  {
+    "article_id": "news_baseline_000",
+    "timestamp_utc": "2026-10-30 08:18:58",
+    "timestamp_est": "2026-10-30 04:18:58",
+    "title": "Institutional Inflows Surge as Spot Bitcoin ETFs Cross Landmark Milestones",
+    "content": "Institutional Inflows Surge as Spot Bitcoin ETFs Cross Landmark Milestones. Market participants are evaluating price implications and order book liquidity for BTC-USD.",
+    "source": "financial_wire_baseline",
+    "url": "https://finance.example.com/news/0"
+  },
+  {
+    "article_id": "news_baseline_001",
+    "timestamp_utc": "2026-10-27 05:18:58",
+    "timestamp_est": "2026-10-27 01:18:58",
+    "title": "Federal Reserve Signals Neutral Rate Outlook, Boosting Global Liquidity Assets",
+    "content": "Federal Reserve Signals Neutral Rate Outlook, Boosting Global Liquidity Assets. Market participants are evaluating price implications and order book liquidity for BTC-USD.",
+    "source": "financial_wire_baseline",
+    "url": "https://finance.example.com/news/1"
+  },
+  {
+    "article_id": "news_baseline_002",
+    "timestamp_utc": "2026-10-23 02:18:58",
+    "timestamp_est": "2026-10-22 22:18:58",
+    "title": "Bitcoin Mining Difficulty Reaches New All-Time High Amidst Hashrate Expansion",
+    "content": "Bitcoin Mining Difficulty Reaches New All-Time High Amidst Hashrate Expansion. Market participants are evaluating price implications and order book liquidity for BTC-USD.",
+    "source": "financial_wire_baseline",
+    "url": "https://finance.example.com/news/2"
+  },
+  {
+    "article_id": "news_baseline_003",
+    "timestamp_utc": "2026-10-17 23:18:58",
+    "timestamp_est": "2026-10-17 19:18:58",
+    "title": "Macro Volatility Spikes Following Geopolitical Escalations, Crypto Holds Range",
+    "content": "Macro Volatility Spikes Following Geopolitical Escalations, Crypto Holds Range. Market participants are evaluating price implications and order book liquidity for BTC-USD.",
+    "source": "financial_wire_baseline",
+    "url": "https://finance.example.com/news/3"
+  },
+  {
+    "article_id": "news_baseline_004",
+    "timestamp_utc": "2026-10-11 20:18:58",
+    "timestamp_est": "2026-10-11 16:18:58",
+    "title": "Regulatory Clarity Emerging Across G20 Jurisdictions for Digital Assets",
+    "content": "Regulatory Clarity Emerging Across G20 Jurisdictions for Digital Assets. Market participants are evaluating price implications and order book liquidity for BTC-USD.",
+    "source": "financial_wire_baseline",
+    "url": "https://finance.example.com/news/4"
+  },
+  {
+    "article_id": "news_baseline_005",
+    "timestamp_utc": "2026-10-03 17:18:58",
+    "timestamp_est": "2026-10-03 13:18:58",
+    "title": "Derivatives Liquidation Event Triggers Brief Flash Dip Before Swift Recovery",
+    "content": "Derivatives Liquidation Event Triggers Brief Flash Dip Before Swift Recovery. Market participants are evaluating price implications and order book liquidity for BTC-USD.",
+    "source": "financial_wire_baseline",
+    "url": "https://finance.example.com/news/5"
+  },
+  {
+    "article_id": "news_baseline_006",
+    "timestamp_utc": "2026-09-26 14:18:58",
+    "timestamp_est": "2026-09-26 10:18:58",
+    "title": "Corporate Treasuries Expand Strategic Bitcoin Holdings in Q3 Balance Sheets",
+    "content": "Corporate Treasuries Expand Strategic Bitcoin Holdings in Q3 Balance Sheets. Market participants are evaluating price implications and order book liquidity for BTC-USD.",
+    "source": "financial_wire_baseline",
+    "url": "https://finance.example.com/news/6"
+  },
+  {
+    "article_id": "news_baseline_007",
+    "timestamp_utc": "2026-09-17 11:18:58",
+    "timestamp_est": "2026-09-17 07:18:58",
+    "title": "Whale Wallet Movements to Centralized Exchanges Spark Short-Term Caution",
+    "content": "Whale Wallet Movements to Centralized Exchanges Spark Short-Term Caution. Market participants are evaluating price implications and order book liquidity for BTC-USD.",
+    "source": "financial_wire_baseline",
+    "url": "https://finance.example.com/news/7"
+  },
+  {
+    "article_id": "news_baseline_008",
+    "timestamp_utc": "2026-09-06 08:18:58",
+    "timestamp_est": "2026-09-06 04:18:58",
+    "title": "Global Payment Network Announces Full Integration for Crypto Settlement",
+    "content": "Global Payment Network Announces Full Integration for Crypto Settlement. Market participants are evaluating price implications and order book liquidity for BTC-USD.",
+    "source": "financial_wire_baseline",
+    "url": "https://finance.example.com/news/8"
+  },
+  {
+    "article_id": "news_baseline_009",
+    "timestamp_utc": "2026-08-24 05:18:58",
+    "timestamp_est": "2026-08-24 01:18:58",
+    "title": "Options Market Pricing Implied Volatility Compression Across Major Crypto Pairs",
+    "content": "Options Market Pricing Implied Volatility Compression Across Major Crypto Pairs. Market participants are evaluating price implications and order book liquidity for BTC-USD.",
+    "source": "financial_wire_baseline",
+    "url": "https://finance.example.com/news/9"
+  }
+]

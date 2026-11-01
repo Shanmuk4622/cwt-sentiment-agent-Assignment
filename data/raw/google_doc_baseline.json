@@ -1,0 +1,37 @@
+{
+  "title": "Historical Twitter/X Datasets \u2014 Verified Download Links",
+  "doc_url": "https://docs.google.com/document/d/1w-Y86OjkiOjlIIth0VgTAohql9zcGi3uoDNYTaTsZuw/edit?tab=t.0",
+  "datasets": [
+    {
+      "name": "Bitcoin tweets \u2014 16M tweets (Kaggle)",
+      "size": "4.2 GB (~16M tweets)",
+      "dates": "Jan 2016 \u2013 Mar 2019",
+      "access": "CC0 Public Domain; free"
+    },
+    {
+      "name": "Bitcoin Twitter Sentiment Dataset (2013\u20132023) (Kaggle)",
+      "size": "44.9 GB (26M+ cleaned English tweets)",
+      "dates": "2013\u20132023",
+      "access": "CC0 Public Domain; free"
+    },
+    {
+      "name": "Bitcoin Tweets Dataset (2025\u20132026) (Kaggle)",
+      "size": "2.1 GB bi-monthly updated corpus",
+      "dates": "2025\u2013present",
+      "access": "CC0 Public Domain; free"
+    },
+    {
+      "name": "Crypto & Stock Tweets (Hugging Face)",
+      "size": "8.02M cleaned tweets (5.75M crypto + 2.62M stock)",
+      "dates": "2016\u20132023",
+      "access": "CC-BY-4.0; free, no login"
+    },
+    {
+      "name": "StockTwits 2008\u20132022 (NYU, Journal of Quantitative Description)",
+      "size": "71+ GB (550M+ posts from 7M+ users)",
+      "dates": "2008\u20132022",
+      "access": "Free, direct CSV download from S3"
+    }
+  ],
+  "notes": "Post-2023 X data is rare due to API paywalls. The 2025-2026 Kaggle Bitcoin dataset and Apify scrapers provide contemporary coverage."
+}
