@@ -61,3 +61,7 @@ htmlcov/
 # Operating System files
 .DS_Store
 Thumbs.db
+
+# Model caches
+catboost_info/
+
